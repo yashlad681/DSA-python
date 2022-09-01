@@ -1,12 +1,12 @@
-ar = [1,2,3,4,5,6,7]
+ar = [2,8,12,15]
 
 def pair(tgt):
     required={}
     for i in range(len(ar)):
-        if tgt-i in required:
+        if tgt-ar[i] in required:
             return (required[tgt-ar[i]],i)
         else:
             required[ar[i]]=i
     return required
 
-print(pair(7))
+print(pair(20))
